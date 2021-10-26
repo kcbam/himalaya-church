@@ -1,0 +1,183 @@
+.home-intro-wrapper {
+  width: 100%;
+  padding: 50px 0;
+  background: rgba(197, 217, 223, 0.1);
+  min-height: 400px;
+  padding-left: 50px;
+  .home-intro {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    .home-intro-desc {
+      h2 {
+        color: rgba(0, 114, 195, 0.7);
+        margin-bottom: 10px;
+        font-weight: 600;
+        font-size: 2rem;
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.6;
+        word-spacing: 0.5;
+        font-weight: 200;
+        color: #155e91;
+      }
+      .btn {
+        width: 150px;
+        background-color: $ternary-color;
+        padding: 10px;
+        display: inline-block;
+        border-radius: 10px;
+        color: $secondary-color;
+        margin-top: 20px;
+        transition: all 0.3s;
+        margin-right: 10px;
+        &:hover {
+          opacity: 0.7;
+          transition: all 0.3s;
+        }
+      }
+    }
+    .home-intro-img {
+      max-width: 400px;
+      max-height: 400px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        border-radius: 10px;
+        height: auto;
+        display: block;
+        transition: auto 0.5s;
+        &:hover {
+          transform: scaleX(-1);
+          transition: auto 0.5s;
+        }
+      }
+    }
+  }
+}
+
+.home-bible-study {
+  width: 100%;
+  min-height: 400px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(22, 72, 108, 0.9),
+      rgba(52, 92, 121, 0.9)
+    ),
+    url(../../assets/img/bible.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  .home-bible-desc {
+    position: absolute;
+    width: 700px;
+    margin: 0 auto;
+    top: 18%;
+    left: 30%;
+    z-index: 10;
+    h2 {
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #fff;
+      font-size: 18px;
+      line-height: 1.6;
+      word-spacing: 0.5;
+      font-weight: 300;
+      margin-bottom: 10px;
+    }
+    .btn {
+      width: 150px;
+      background-color: $ternary-color;
+      padding: 10px;
+      display: inline-block;
+      border-radius: 10px;
+      color: $secondary-color;
+      margin: 15px 0;
+      transition: all 0.3s;
+      margin-right: 10px;
+      &:hover {
+        opacity: 0.7;
+        transition: all 0.3s;
+      }
+    }
+    .btn-donate {
+      background-color: $fourth-color;
+      transition: all 0.3s;
+      &:hover {
+        opacity: 0.7;
+        transition: all 0.3s;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      z-index: -1;
+    }
+  }
+}
+.home-event-wrapper {
+  width: 100%;
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 30px;
+    padding-bottom: 8px;
+    color: #165e91;
+  }
+
+  .home-event {
+    min-height: 450px;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    gap: 10px;
+    padding: 20px;
+    padding-bottom: 50px;
+    .home-event-desc {
+      max-width: 400px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      img {
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: block;
+        filter: sepia(90%);
+        transform: scale(1);
+        transition: 0.3s ease-in-out;
+        &:hover {
+          filter: sepia(0%);
+          transition: 0.3s ease-in-out;
+          transform: scale(1.01);
+        }
+      }
+      .event-content {
+        padding: 10px;
+        h2 {
+          font-size: 1.3rem;
+          color: #165e91;
+          text-align: left;
+          padding-top: 5px;
+          font-weight: 500;
+        }
+        p {
+          color: #155e91;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}

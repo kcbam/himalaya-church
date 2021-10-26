@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+$font-family: Poppins, sans-serif;
+$primary-color: rgba(88, 157, 214, 1);
+$secondary-color: #fff;
+$ternary-color: #0072c3;
+$fourth-color: rgba(232, 95, 54, 0.8);
+
+body {
+  font-family: $font-family;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.btn {
+  width: 150px;
+  background-color: $ternary-color;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 10px;
+  color: $secondary-color;
+  margin-top: 20px;
+  transition: all 0.3s;
+  margin-right: 10px;
+  text-align: center;
+  &:hover {
+    opacity: 0.7;
+    transition: all 0.3s;
+  }
+}
+
+.btn-donate {
+  background-color: $fourth-color;
+  transition: all 0.3s;
+  text-align: center;
+  &:hover {
+    opacity: 0.7;
+    transition: all 0.3s;
+  }
+}
